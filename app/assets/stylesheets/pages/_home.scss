@@ -9,7 +9,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   overflow-x: hidden;
 }
 p {
@@ -71,10 +71,21 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto;
 }
+
 header {
   text-align: center;
-  background-color: $brand-color2;
+  // background-color: $brand-color2;
   color: white;
+  background-image :  linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+  url("background-header.jpg");
+  background-size: cover;
+  background-position: center center !important;
+  vertical-align:center;
+  margin-top:70px;
+
 }
 header .container {
   padding-top: 100px;
@@ -86,10 +97,12 @@ header img {
 }
 header .intro-text .name {
   display: block;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2em;
+  padding-top:150px;
+
 }
 header .intro-text .skills {
   font-size: 1.25em;
@@ -101,17 +114,19 @@ header .intro-text .skills {
     padding-bottom: 100px;
   }
   header .intro-text .name {
-    font-size: 4.75em;
+    font-size: 3.75em;
+    font-weight:lighter;
   }
   header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+
 .navbar-custom {
-  background: $brand-color1;
+  background: $brand-color2;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: lighter;
   border: none;
 }
 .navbar-custom .navbar-brand {
@@ -200,6 +215,7 @@ section.success {
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
+
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;
@@ -302,7 +318,7 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: $brand-color1;
+  background-color: $brand-color2;
 }
 footer .footer-col {
   margin-bottom: 50px;
@@ -311,7 +327,7 @@ footer .footer-below {
   padding: 25px 0;
   background-color: #233140;
 }
-.btn-outline {
+.-outline {
   color: white;
   font-size: 20px;
   border: solid 2px white;
@@ -422,7 +438,7 @@ fieldset[disabled] .btn-success.active {
   line-height: 45px;
 }
 .scroll-top {
-  position: fixed;
+  // position: fixed;
   right: 2%;
   bottom: 2%;
   width: 50px;
@@ -518,6 +534,7 @@ fieldset[disabled] .btn-success.active {
 }
 div#maincontent {
   outline: none;
+  height:800px;
 }
 
 
@@ -525,4 +542,9 @@ div#maincontent {
   border-radius: 50%;
   height: 300px;
   width: 300px;
+}
+
+.paragraphs {
+  padding-left: 25px;
+  padding-right: 25px;
 }
