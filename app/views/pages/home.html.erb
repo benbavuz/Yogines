@@ -6,10 +6,10 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Ines Vanderschelden</a>
+                </button> -->
+                <a class="navbar-brand" href="#page-top">INÈS VANDERSCHELDEN</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,56 +51,63 @@
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center" style = "padding-bottom: 60px">
-                    <h2 style="font-weight: lighter">Qui suis-je?</h2>
+<section id= "portfolio">
+  <div class = "container">
 
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3 portfolio-item">
-                        <%= image_tag("baby.jpg", class: "img-responsive") %>
-                </div>
+    <div class="row">
+      <div class="col-lg-12 text-center" style = "padding-bottom: 60px">
+        <h2 style="font-weight: lighter">Qui suis-je?</h2>
+      </div>
+    </div>
 
-                <div class="col-sm-3 portfolio-item">
+    <div class = "row">
+     <div class = "col-xs-12 col-md-6">
+        <div class="card">
+         <%= image_tag("baby.jpg", class: "card-img-top img-responsive") %>
+         <div class="card-block">
 
-                        <%= image_tag("sisters.jpg", class: "img-responsive") %>
+           <p class="card-text">Franco-Slovène, née à Paris en 1990, je grandis en banlieue parisienne où je fais une partie de mes études. A 15 ans, je découvre la magie de Paris et l’effervescence de ses transports en commun au quotidien pour aller au Lycée à Louis Le Grand.</p>
 
-                </div>
+         </div>
+       </div>
+     </div>
 
-                <div class="col-sm-3 portfolio-item">
+     <div class = "col-xs-12 col-md-6">
+        <div class="card">
+         <%= image_tag("sisters-crop.jpg", class: "card-img-top img-responsive") %>
+         <div class="card-block">
+           <p class="card-text">3 sœurs, 4 chiens, 6 chats, 2 tortues d’eau, en passant par un caméléon, des lapins et des poissons rouges, la vie en famille nombreuse m’a conditionnée depuis mon plus jeune âge, et a mis au centre de ma vie la valeur du partage.</p>
+
+         </div>
+       </div>
+     </div>
+    </div>
+
+    <div class = "row">
+     <div class = "col-xs-12 col-md-6">
+        <div class="card">
+         <%= image_tag("flores.jpg", class: "card-img-top img-responsive") %>
+         <div class="card-block">
+
+           <p class="card-text">Je pars à Reims pour mes études d’école de commerce après 2 ans de classe préparatoire à Paris. J’ai la chance de faire mon échange académique au Mexique (et mon premier cours de yoga), et un des mes stages à Londres (où le yoga fait partie de mes activités hebdomadaires).</p>
+         </div>
+       </div>
+     </div>
+
+     <div class = "col-xs-12 col-md-6">
+        <div class="card">
+         <%= image_tag("portfolio3.jpg", class: "card-img-top img-responsive") %>
+         <div class="card-block">
+           <p class="card-text">En janvier 2017, après plus de trois ans de pratique régulière de Yoga Vinyasa, je laisse derrière moi la vie en entreprise et le Marketing et décide de me lancer, passionnée et convaincue des bienfaits du yoga. Je pars me former en Inde. Aujourd’hui, certifiée professeur de yoga, ma volonté principale est de partager tout ce que le yoga a pu m’apporter et continue à m’apporter chaque jour.</p>
+
+         </div>
+       </div>
+     </div>
+    </div>
 
 
-                        <%= image_tag("flores.jpg", class: "img-responsive") %>
-
-                </div>
-                <div class="col-sm-3 portfolio-item">
-
-                        <%= image_tag("portfolio3.jpg", class: "img-responsive") %>
-
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-
-                <p class ="paragraphs">
-                  Franco-Slovène, née à Paris en 1990, je grandis en banlieue parisienne où je fais une partie de mes études.  A 15 ans, je découvre la magie de Paris et l’effervescence de ses transports en commun au quotidien pour aller au Lycée à Louis Le Grand. </p>
-
-<p class = "paragraphs">3 sœurs, 4 chiens, 6 chats, 2 tortues d’eau, en passant par un caméléon, des lapins et des poissons rouges, la vie en famille nombreuse m’a conditionnée depuis mon plus jeune âge, et a mis au centre de ma vie la valeur du partage.</p>
-
-<p class = "paragraphs">Je pars à Reims pour mes études d’école de commerce après 2 ans de classe préparatoire à Paris. J’ai la chance de faire mon échange académique au Mexique (et mon premier cours de yoga), et un des mes stages à Londres (où le yoga fait partie de mes activités hebdomadaires).</p>
-
-<p class = "paragraphs">En janvier 2017, après plus de trois ans de pratique régulière de Yoga Vinyasa, je laisse derrière moi la vie en entreprise et le Marketing et décide de me lancer, passionnée et convaincue des bienfaits du yoga. Je pars me former en Inde. Aujourd’hui, certifiée professeur de yoga, ma volonté principale est de partager tout ce que le yoga a pu m’apporter et continue à m’apporter chaque jour.
-                </p>
-
-</div>
-</div>
-
-            </div>
-        </div>
-    </section>
+  </div>
+</section>
 
     <!-- About Section -->
     <section class="success" id="about">
@@ -137,9 +144,8 @@
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
+                <div class="col-lg-12 text-center" style = "padding-bottom: 60px">
+                    <h2 style="font-weight: lighter">Contact</h2>
                 </div>
             </div>
             <div class="row">

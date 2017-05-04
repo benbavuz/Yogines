@@ -12,6 +12,16 @@
         event.preventDefault();
     });
 
+
+
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 790){ // Set position from top to add class
+        $('.navbar-custom').addClass("shrink");
+    } else {
+        $('.navbar-custom').removeClass("shrink");
+    }
+});
+
     // Highlight the top nav as scrolling occurs
     // $('body').scrollspy({
     //     target: '.navbar-fixed-top',
